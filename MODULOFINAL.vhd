@@ -5,11 +5,8 @@ entity MODULOFINAL is
 
 	PORT (
 			CLK, botao1, botao2, botao3, botaoreset: in std_logic;
-			entrada1 : in  STD_LOGIC_VECTOR (3 downto 0);
-         entrada2 : in  STD_LOGIC_VECTOR (3 downto 0);
-			selecao : in  STD_LOGIC_VECTOR (3 downto 0);
-			saidaFinal : out  STD_LOGIC_VECTOR (3 downto 0);
-			cout : out STD_LOGIC);
+			pinos : in STD_LOGIC_VECTOR(3 downto 0);
+			saidaFinal : out  STD_LOGIC_VECTOR (3 downto 0));
 
 
 end MODULOFINAL;
@@ -31,8 +28,7 @@ component ULA is
 	 Port ( entrada1 : in  STD_LOGIC_VECTOR (3 downto 0);
            entrada2 : in  STD_LOGIC_VECTOR (3 downto 0);
 			  selecao : in  STD_LOGIC_VECTOR (3 downto 0);
-           saidaFinal : out  STD_LOGIC_VECTOR (3 downto 0);
-			  cout: out STD_LOGIC);
+           saidaFinal : out  STD_LOGIC_VECTOR (3 downto 0));
            
 end component ULA;
 ----
@@ -40,25 +36,28 @@ end component ULA;
 signal primeiro_numero:STD_LOGIC_VECTOR (3 downto 0);
 signal segundo_numero:STD_LOGIC_VECTOR (3 downto 0);
 signal selecao_signal:STD_LOGIC_VECTOR (3 downto 0);
-signal estado_atual:STD_LOGIC_VECTOR (1 downto 0);
+signal estado_atual:STD_LOGIC_VECTOR (1 downto 0):="00";
 
 begin	
 
-ula_component: ULA port map (primeiro_numero, segundo_numero, selecao, saidaFinal,cout);
+ula_component: ULA port map (primeiro_numero, segundo_numero, selecao_signal, saidaFinal);
 maqestados_component : MAQESTADOS port map (CLK, botao1, botao2, botao3, botaoreset,estado_atual);
 
-process (estado_atual,entrada1,entrada2,selecao)
+process (estado_atual,pinos,selecao_signal,primeiro_numero,segundo_numero)
 	begin
 		if estado_atual = "01" then
-			primeiro_numero <= entrada1;
-		end if;
-		if estado_atual = "10" then
-			segundo_numero <= entrada2;
-		end if;
-		if estado_atual = "11" then
-			selecao_signal <= selecao;
-		end if;
-		if estado_atual = "00" then
+			primeiro_numero <= pinos;
+			segundo_numero <= segundo_numero;
+			selecao_signal <= selecao_signal;
+		elsif estado_atual = "10" then
+			segundo_numero <= pinos;
+			primeiro_numero <= primeiro_numero;
+			selecao_signal <= selecao_signal;
+		elsif estado_atual = "11" then
+			selecao_signal <= pinos;
+			primeiro_numero <= primeiro_numero;
+			segundo_numero <= segundo_numero;
+		elsif estado_atual = "00" then
 			selecao_signal <= "0000";
 			primeiro_numero <= "0000";
 			segundo_numero <= "0000";

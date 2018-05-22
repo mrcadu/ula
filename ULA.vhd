@@ -7,8 +7,7 @@ entity ULA is
     Port ( entrada1 : in  STD_LOGIC_VECTOR (3 downto 0);
            entrada2 : in  STD_LOGIC_VECTOR (3 downto 0);
 			  selecao : in  STD_LOGIC_VECTOR (3 downto 0);
-			  saidaFinal : out  STD_LOGIC_VECTOR (3 downto 0);
-			  cout : out STD_LOGIC);
+			  saidaFinal : out  STD_LOGIC_VECTOR (3 downto 0));
            
 end ULA;
 
@@ -36,8 +35,7 @@ component fullAdder4bits
     Port ( num1: in  STD_LOGIC_VECTOR (3 downto 0);
            num2 : in  STD_LOGIC_VECTOR (3 downto 0);
            Cin : in  STD_LOGIC;
-           Sum : out  STD_LOGIC_VECTOR (3 downto 0);
-           Cout : out  STD_LOGIC);
+           Sum : out  STD_LOGIC_VECTOR (3 downto 0));
 			  
 end component fullAdder4bits;
 ----
@@ -115,7 +113,6 @@ signal saida_XNOR: STD_LOGIC_VECTOR (3 downto 0);
 signal saida_COMPLEMENTO2: STD_LOGIC_VECTOR (3 downto 0);
 signal saida_SUBTRATOR: STD_LOGIC_VECTOR (3 downto 0);
 signal saida_FULLADDER : STD_LOGIC_VECTOR (3 downto 0);
-signal cout_signal : STD_LOGIC;
 
 -----------SINAIS
 
@@ -129,7 +126,7 @@ begin
 	 FUNCTION_XOR : AxorB PORT MAP (entrada1, entrada2, saida_XOR);
     FUNCTION_XNOR : AxnorB PORT MAP (entrada1, entrada2, saida_XNOR);    
 	 FUNCTION_COMPLEMENTO2 : complemento2 PORT MAP (entrada1, saida_COMPLEMENTO2);
-    FUNCTION_FULLADDER : fullAdder4bits PORT MAP (entrada1, entrada2, '0' ,saida_FULLADDER,cout_signal);
+    FUNCTION_FULLADDER : fullAdder4bits PORT MAP (entrada1, entrada2, '0' ,saida_FULLADDER);
     FUNCTION_SUBTRATOR : Subtrator PORT MAP (entrada1, entrada2,saida_SUBTRATOR);
 	 
 WITH selecao SELECT saidaFinal<=  

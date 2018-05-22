@@ -36,8 +36,7 @@ component fullAdder4bits
     Port ( num1: in  STD_LOGIC_VECTOR (3 downto 0);
            num2 : in  STD_LOGIC_VECTOR (3 downto 0);
            Cin : in  STD_LOGIC;
-           Sum : out  STD_LOGIC_VECTOR (3 downto 0);
-           Cout : out  STD_LOGIC);
+           Sum : out  STD_LOGIC_VECTOR (3 downto 0));
 			  
 end component fullAdder4bits;
 

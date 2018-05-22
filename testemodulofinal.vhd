@@ -6,10 +6,10 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY TestModuloFinal IS
-END TestModuloFinal;
+ENTITY testemodulofinal IS
+END testemodulofinal;
  
-ARCHITECTURE behavior OF TestModuloFinal IS 
+ARCHITECTURE behavior OF testemodulofinal IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
@@ -20,7 +20,7 @@ ARCHITECTURE behavior OF TestModuloFinal IS
          botao2 : IN  std_logic;
          botao3 : IN  std_logic;
          botaoreset : IN  std_logic;
-         pinos : IN STD_LOGIC_VECTOR(3 downto 0)
+         pinos : IN  std_logic_vector(3 downto 0);
          saidaFinal : OUT  std_logic_vector(3 downto 0)
         );
     END COMPONENT;
@@ -33,6 +33,7 @@ ARCHITECTURE behavior OF TestModuloFinal IS
    signal botao3 : std_logic := '0';
    signal botaoreset : std_logic := '0';
    signal pinos : std_logic_vector(3 downto 0) := (others => '0');
+
  	--Outputs
    signal saidaFinal : std_logic_vector(3 downto 0);
 
@@ -51,12 +52,14 @@ BEGIN
           pinos => pinos,
           saidaFinal => saidaFinal
         );
- 
+
    -- Stimulus process
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
       wait for 100 ns;	
+
+      wait for CLK_period*10;
 
       -- insert stimulus here 
 		wait for CLK_period;
@@ -102,7 +105,6 @@ BEGIN
 		wait for CLK_period;
 		
 		CLK <= '1';
-		
       wait;
    end process;
 

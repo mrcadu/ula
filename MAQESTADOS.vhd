@@ -16,7 +16,6 @@ architecture Behavioral of MAQESTADOS is
 begin
 	estados_maquina: process (CLK)
 		begin
-
 			if CLK'event and CLK = '1' then
 				if botaoreset = '1' then 
 					estadoatual <= S0; Z <= "00";
@@ -24,15 +23,15 @@ begin
 					case estadoatual is
 						when S0 =>
 							if botao1 = '1' then
-								estadoatual <= S1; Z <= "01";
+								 Z <= "01"; estadoatual <= S1;
 							end if;
 						when S1 =>
 							if botao2 = '1' then
-								estadoatual <= S2; Z <= "10";
+								Z <= "10"; estadoatual <= S2; 
 							end if;
 						when S2 =>
 							if botao3 = '1' then
-								estadoatual <= S3; Z <= "11";
+								Z <= "11"; estadoatual <= S3;
 							end if;
 						when others =>
 							null;
