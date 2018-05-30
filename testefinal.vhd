@@ -99,7 +99,7 @@ BEGIN
 
       --insert stimulus here 
 		
-		pinos <= "0000";
+		pinos <= "0001";
 		
 		wait for CLK_Period;
 		

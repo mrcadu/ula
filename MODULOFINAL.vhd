@@ -43,7 +43,7 @@ begin
 ula_component: ULA port map (primeiro_numero, segundo_numero, selecao_signal, saidaFinal);
 maqestados_component : MAQESTADOS port map (CLK, botao1, botao2, botao3, botaoreset,estado_atual);
 
-process (estado_atual,pinos,selecao_signal,primeiro_numero,segundo_numero)
+process (estado_atual,selecao_signal,primeiro_numero,segundo_numero)
 	begin
 		if estado_atual = "01" then
 			primeiro_numero <= pinos;
