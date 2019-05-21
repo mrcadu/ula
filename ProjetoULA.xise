@@ -9,16 +9,12 @@
     <!-- along with the project source files, is sufficient to open and    -->
     <!-- implement in ISE Project Navigator.                               -->
     <!--                                                                   -->
-    <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+    <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
   </header>
 
-  <version xil_pn:ise_version="13.4" xil_pn:schema_version="2"/>
+  <version xil_pn:ise_version="14.7" xil_pn:schema_version="2"/>
 
   <files>
-    <file xil_pn:name="ULA.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
-    </file>
     <file xil_pn:name="adder1bit.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
@@ -29,9 +25,9 @@
     </file>
     <file xil_pn:name="testesomador.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="39"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="39"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="39"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="4"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="4"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="4"/>
     </file>
     <file xil_pn:name="complemento2.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
@@ -39,9 +35,9 @@
     </file>
     <file xil_pn:name="testecomplemento2.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="49"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="49"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="49"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="6"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="6"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="6"/>
     </file>
     <file xil_pn:name="AND.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
@@ -51,21 +47,15 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
     </file>
-    <file xil_pn:name="teste_or_gate.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="106"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="106"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="106"/>
-    </file>
     <file xil_pn:name="Subtrator.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
     </file>
     <file xil_pn:name="TesteSubtrator.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="146"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="146"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="146"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="11"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="11"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="11"/>
     </file>
     <file xil_pn:name="AxorB.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
@@ -79,62 +69,85 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
     </file>
-    <file xil_pn:name="AxnorB.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
-    </file>
-    <file xil_pn:name="MAQESTADOS.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
-    </file>
     <file xil_pn:name="MODULOFINAL.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
+    </file>
+    <file xil_pn:name="TESTMAQESTADOS.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="18"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="18"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="18"/>
+    </file>
+    <file xil_pn:name="testeula.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="19"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="19"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="19"/>
     </file>
     <file xil_pn:name="MapeamentoFinal.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="TESTMAQESTADOS.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="184"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="184"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="184"/>
+    <file xil_pn:name="contador.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
     </file>
-    <file xil_pn:name="testeula.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="testeContador.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="208"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="208"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="208"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="49"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="49"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="49"/>
     </file>
-    <file xil_pn:name="testefinal.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="100"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="100"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="100"/>
+    <file xil_pn:name="teste_final.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="73"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="73"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="73"/>
+    </file>
+    <file xil_pn:name="divisor_frequencia.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
+    </file>
+    <file xil_pn:name="teste_divisor.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="90"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="90"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="90"/>
+    </file>
+    <file xil_pn:name="teste_and.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="95"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="95"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="95"/>
+    </file>
+    <file xil_pn:name="AxnorB.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
+    </file>
+    <file xil_pn:name="ULA.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
+    </file>
+    <file xil_pn:name="modulo_final_teste.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="118"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="118"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="118"/>
     </file>
   </files>
 
-  <autoManagedFiles>
-    <!-- The following files are identified by `include statements in verilog -->
-    <!-- source files and are automatically managed by Project Navigator.     -->
-    <!--                                                                      -->
-    <!-- Do not hand-edit this section, as it will be overwritten when the    -->
-    <!-- project is analyzed based on files automatically identified as       -->
-    <!-- include files.                                                       -->
-  </autoManagedFiles>
-
   <properties>
-    <property xil_pn:name="Auto Implementation Top" xil_pn:value="false" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Device" xil_pn:value="xc3s700an" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Device Family" xil_pn:value="Spartan3A and Spartan3AN" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Implementation Top" xil_pn:value="Architecture|MODULOFINAL|Behavioral" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Implementation Top File" xil_pn:value="MODULOFINAL.vhd" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/MODULOFINAL" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Overwrite Existing Symbol" xil_pn:value="true" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Package" xil_pn:value="fgg484" xil_pn:valueState="default"/>
     <property xil_pn:name="Preferred Language" xil_pn:value="VHDL" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Property Specification in Project File" xil_pn:value="Store non-default values only" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/testefinal" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.testefinal" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/modulo_final_teste" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.modulo_final_teste" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Simulator" xil_pn:value="ISim (VHDL/Verilog)" xil_pn:valueState="default"/>
     <property xil_pn:name="Speed Grade" xil_pn:value="-4" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Synthesis Tool" xil_pn:value="XST (VHDL/Verilog)" xil_pn:valueState="default"/>
@@ -146,7 +159,7 @@
     <!--                                                                                  -->
     <!-- The following properties are for internal use only. These should not be modified.-->
     <!--                                                                                  -->
-    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Architecture|testefinal|behavior" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Architecture|modulo_final_teste|behavior" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_DesignName" xil_pn:value="Aritmetica" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_DevFamilyPMName" xil_pn:value="spartan3a" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_intProjectCreationTimestamp" xil_pn:value="2018-04-20T13:28:03" xil_pn:valueState="non-default"/>
@@ -155,10 +168,17 @@
     <property xil_pn:name="PROP_intWorkingDirUsed" xil_pn:value="No" xil_pn:valueState="non-default"/>
   </properties>
 
-  <bindings>
-    <binding xil_pn:location="/MODULOFINAL" xil_pn:name="MapeamentoFinal.ucf"/>
-  </bindings>
+  <bindings/>
 
   <libraries/>
+
+  <autoManagedFiles>
+    <!-- The following files are identified by `include statements in verilog -->
+    <!-- source files and are automatically managed by Project Navigator.     -->
+    <!--                                                                      -->
+    <!-- Do not hand-edit this section, as it will be overwritten when the    -->
+    <!-- project is analyzed based on files automatically identified as       -->
+    <!-- include files.                                                       -->
+  </autoManagedFiles>
 
 </project>

@@ -7,7 +7,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity complemento2 is
 
 	Port ( num1: in  STD_LOGIC_VECTOR (3 downto 0);
-			 saida: out STD_LOGIC_VECTOR (3 downto 0)
+			 saida: buffer STD_LOGIC_VECTOR (3 downto 0)
 			 );
 end complemento2;
 
@@ -21,7 +21,7 @@ component adder1Bit
     Port ( A : in  STD_LOGIC;
            B : in  STD_LOGIC;
            Cin : in  STD_LOGIC;
-           sum : out  STD_LOGIC;
+           sum : buffer  STD_LOGIC;
            cout : out  STD_LOGIC);
 end component adder1Bit;
 

@@ -1,22 +1,9 @@
-# Pinos
+# selecao
 
-NET "pinos[0]" LOC = "V8";
-NET "pinos[1]" LOC = "U10";
-NET "pinos[2]" LOC = "U8";
-NET "pinos[3]" LOC = "T9";
-
-# Botao1
-
-NET "botao1" LOC = "U15";
-
-# Botao2
-
-NET "botao2" LOC = "T14";
-
-# Botao3
-
-NET "botao3" LOC = "T16";
-
+NET "selecao[0]" LOC = "V8";
+NET "selecao[1]" LOC = "U10";
+NET "selecao[2]" LOC = "U8";
+NET "selecao[3]" LOC = "T9";
 
 #Saidas
 

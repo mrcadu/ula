@@ -8,8 +8,8 @@ entity Subtrator is
 	PORT (
 				minuendo: in STD_LOGIC_VECTOR( 3 downto 0);
 				subtraendo: in STD_LOGIC_VECTOR( 3 downto 0);
-				saida: out STD_LOGIC_VECTOR (3 downto 0)
-				);
+				saida: buffer STD_LOGIC_VECTOR (3 downto 0);
+				flags: out STD_LOGIC_VECTOR (3 downto 0));
 				
 end Subtrator;
 
@@ -25,7 +25,7 @@ architecture Behavioral of Subtrator is
 
 component complemento2 
     Port ( num1 : in  STD_LOGIC_VECTOR(3 downto 0);
-           saida : out  STD_LOGIC_VECTOR(3 downto 0)
+           saida : buffer  STD_LOGIC_VECTOR(3 downto 0)
 			  );
 end component complemento2;
 
@@ -36,7 +36,8 @@ component fullAdder4bits
     Port ( num1: in  STD_LOGIC_VECTOR (3 downto 0);
            num2 : in  STD_LOGIC_VECTOR (3 downto 0);
            Cin : in  STD_LOGIC;
-           Sum : out  STD_LOGIC_VECTOR (3 downto 0));
+           Sum : buffer  STD_LOGIC_VECTOR (3 downto 0);
+			  flags: out STD_LOGIC_VECTOR);
 			  
 end component fullAdder4bits;
 
@@ -47,8 +48,8 @@ end component fullAdder4bits;
 
 begin
 
-passo1:	complemento2 port map(subtraendo, novosubtraendo); 
-passo2:	fullAdder4bits port map (minuendo, novosubtraendo, '0', saida);
+passo1:	complemento2 port map(subtraendo, novosubtraendo);
+passo2:	fullAdder4bits port map (minuendo, novosubtraendo,'0', saida,flags);
 
 	
 end Behavioral;

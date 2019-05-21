@@ -6,7 +6,7 @@ entity adder1bit is
     Port ( A : in  STD_LOGIC;
            B : in  STD_LOGIC;
            Cin : in  STD_LOGIC;
-           sum : out  STD_LOGIC;
+           sum : buffer  STD_LOGIC;
            cout : out  STD_LOGIC);
 end adder1bit;
 
